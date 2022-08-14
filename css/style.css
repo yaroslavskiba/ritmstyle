@@ -250,7 +250,7 @@ body._lock {
 	position: relative;
 	font-family: 'El Messiri';
 	font-weight: 700;
-	font-size: 24px;
+	font-size: calc(18px + 6 *(100vw / 1315));
 	line-height: 140%;
 }
 .ritmstyle__text::before,
@@ -282,7 +282,31 @@ body._lock {
 .ritmstyle__title {
 	font-family: 'El Messiri';
 	font-weight: 700;
-	font-size: 64px;
+	font-size: calc(34px + 30 *(100vw / 1315));
 	line-height: 140%;
 	text-align: center;
 }
+@media(max-width: 768px) {
+	.ritmstyle__bg {
+		background-position: right;
+	}
+}
+@media(max-width: 480px) {
+	.ritmstyle__text::before {
+		left: -43px;
+	}
+	.ritmstyle__text::after {
+		right: -43px;
+	}
+	.ritmstyle__bg {
+		background-position: center right -150px;
+	}
+}
+@media(max-width: 320px) {
+	.ritmstyle__bg {
+		background-position: center right -200px;
+	}
+}
+
+/* ---------------------------- */
+
