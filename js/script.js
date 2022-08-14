@@ -44,13 +44,14 @@ var swiper = new Swiper(".swiper-container", {
 	slidesPerView: "auto",
 	coverflowEffect: {
 	  rotate: 0,
-	  stretch: 0,
+	  stretch: -80,
 	  depth: 350,
 	  modifier: 1,
 	  slideShadows: true
 	},
 	pagination: {
-	  el: ".swiper-pagination"
+		el: ".swiper-pagination",
+		clickable: true
 	}
  });
  
