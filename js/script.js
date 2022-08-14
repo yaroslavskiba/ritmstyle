@@ -34,3 +34,24 @@ if (iconMenu) {
 		menuBody.classList.toggle('_active');
 	});
 }
+
+var swiper = new Swiper(".swiper-container", {
+	effect: "coverflow",
+	initialSlide: 1,
+	spaceBetween: 50,
+	grabCursor: true,
+	centeredSlides: true,
+	slidesPerView: "auto",
+	coverflowEffect: {
+	  rotate: 0,
+	  stretch: 0,
+	  depth: 350,
+	  modifier: 1,
+	  slideShadows: true
+	},
+	pagination: {
+	  el: ".swiper-pagination"
+	}
+ });
+ 
+ 
