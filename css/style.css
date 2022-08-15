@@ -454,7 +454,7 @@ body._lock {
 /* ---------------------------- */
 
 .slider {
-	margin: 100px 100px 0 100px;
+	margin: 150px 100px 0 100px;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -521,6 +521,9 @@ body._lock {
 	border-radius: 3px;
 }
 @media(max-width: 768px) {
+	.slider {
+		margin: 100px 15px 0 15px;
+	}
 	.swiper-container {
 		width: 100%;
 		height: 100%;
@@ -528,8 +531,14 @@ body._lock {
 	.swiper-slide {
 		padding: 25px;
 	}
+	.slider__title {
+		margin-bottom: 75px;
+	}
 }
 @media (max-width: 480px) {
+	.slider {
+		margin: 50px 0 0 0;
+	}
 	.swiper-container {
 			width: 290px;
 	}
@@ -539,4 +548,157 @@ body._lock {
 	.slider__title {
 		margin-bottom: 50px;
 	}
+}
+
+/* ---------------------------- */
+
+.about-us {
+	margin-top: 150px;
+}
+.about-us__container {
+	display: flex;
+	flex-direction: column;
+}
+.about-us__title {
+	margin-bottom: 100px;
+	align-self: center;
+	display: inline-block;
+	position: relative;
+	font-family: 'El Messiri';
+	font-weight: 700;
+	font-size: calc(12px + 36 * (100vw / 1325));
+	line-height: 140%;
+	color: #FFFFFF;
+}
+.about-us__title::before,
+.about-us__title::after {
+	content: '';
+	position: absolute;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 28px;
+	height: 14px;
+}
+.about-us__title::before {
+	background: url(../img/before.svg);
+	top: 30%;
+	left: -66px;
+}
+.about-us__title::after {
+	background: url(../img/after.svg);
+	top: 30%;
+	right: -66px;
+}
+.about-us__info {
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+}
+.info-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 35px;
+}
+.about-us__image {
+	max-width: 631px;
+	border-radius: 10px;
+}
+.about-us__image img {
+	width: 100%;
+}
+.about-us__content {
+	min-width: 350px;
+	max-width: 559px;
+}
+.content__title {
+	font-family: 'Proxima Nova';
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 140%;
+	margin-bottom: 30px;
+}
+.content__text {
+	font-family: 'Proxima Nova';
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 140%;
+	margin-bottom: 20px;
+}
+.content__text:last-child {
+	margin: 0;
+}
+@media(max-width: 948px) {
+	.info-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap: 35px;
+	}
+	.about-us__image {
+		align-self: center;
+		max-width: 631px;
+		border-radius: 10px;
+	}
+	.about-us__image img {
+		width: 100%;
+	}
+	.about-us__content {
+		min-width: 100%;
+	}
+	.content-1 {
+		order: 1;
+	}
+	.image-1 {
+		order: 2;
+	}
+}
+@media(max-width: 768px) {
+	.about-us {
+		margin-top: 100px;
+	}
+	.about-us__info {
+		gap: 75px;
+	}
+}
+@media(max-width: 480px) {
+	.about-us {
+		margin-top: 50px;
+	}
+	.about-us__info {
+		gap: 50px;
+	}
+}
+
+/* ---------------------------- */
+
+.price {
+}
+.price__container {
+}
+.price__title {
+}
+.price__info {
+}
+.price__content {
+}
+.price__list {
+}
+.price__item {
+}
+.price-item-1 {
+}
+.price-item-2 {
+}
+.price-item-3 {
+}
+.price-item-4 {
+}
+.price-item-5 {
+}
+.price__image {
+}
+.price__caption {
 }
