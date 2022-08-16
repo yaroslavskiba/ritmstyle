@@ -763,6 +763,7 @@ body._lock {
 }
 .price__image img {
 	width: 100%;
+	border-radius: 12px;
 }
 .price__caption {
 	font-family: 'El Messiri';
@@ -770,4 +771,39 @@ body._lock {
 	font-size: 21px;
 	line-height: 140%;
 	text-align: center;
+}
+@media(max-width: 768px) {
+	.price {
+		margin-top: 100px;
+	}
+	.price__title {
+		margin-bottom: 75px;
+	}
+	.price__info {
+		flex-direction: column;
+		gap: 45px;
+	}
+	.price__image {
+		width: 100%;
+		padding-left: 0;
+	}
+	.price__content {
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+	}
+}
+@media(max-width: 480px) {
+	.price {
+		margin-top: 50px;
+	}
+	.price__title {
+		margin-bottom: 50px;
+	}
+	.price__list {
+		gap: 15px;
+	}
+	.price__image {
+		gap: 15px;
+	}
 }
