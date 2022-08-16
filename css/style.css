@@ -390,6 +390,7 @@ body._lock {
 	padding: 0 0 50px 50px;
 }
 .grid-item {
+	border-radius: 12px;
 	display: flex;
 	align-items: flex-end;
 	padding: 0 0 30px 40px;
