@@ -16,12 +16,12 @@
 					<div class="header__null"></div>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li><a href="#" class="menu__link">Главная</a></li>
-							<li><a href="#" class="menu__link">Сеансы</a></li>
-							<li><a href="#" class="menu__link">Отзывы</a></li>
+							<li><a data-goto=".page__section_ritmstyle" href="#" class="menu__link">Главная</a></li>
+							<li><a data-goto=".page__section_session" href="#" class="menu__link">Сеансы</a></li>
+							<li><a data-goto=".page__section_slider" href="#" class="menu__link">Отзывы</a></li>
 							<li><a href="#" class="menu__link">Контакты</a></li>
 							<li><a href="#" class="menu__link">Новости</a></li>
-							<li><a href="#" class="menu__link">Обо мне</a></li>
+							<li><a data-goto=".page__section_about-us" href="#" class="menu__link">Обо мне</a></li>
 							<li><a href="#" class="menu__link">Блог</a></li>
 						</ul>
 					</nav>
@@ -33,7 +33,7 @@
 			</div>
 		</header>
 		<main class="main">
-			<section>
+			<section class="page__section page__section_ritmstyle">
 				<div class="ritmstyle">
 					<div class="ritmstyle__container">
 						<div class="ritmstyle__bg">
@@ -48,7 +48,7 @@
 					</div>
 				</div>
 			</section>
-			<section>
+			<section class="page__section page__section_session">
 				<div class="session">
 					<div class="session__container">
 						<h2 class="session__title title-leaves">
@@ -84,7 +84,7 @@
 					</div>
 				</div>
 			</section>
-			<section>
+			<section class="page__section page__section_slider">
 				<div class="slider">
 					<h2 class="slider__title">
 						Отзывы
@@ -123,7 +123,7 @@
 					</div>
 				</div>
 			</section>
-			<section>
+			<section class="page__section page__section_about-us">
 				<div class="about-us">
 					<div class="about-us__container">
 						<h2 class="about-us__title">
@@ -197,9 +197,65 @@
 					</div>
 				</div>
 			</section>
+			<section>
+				<div class="map">
+					<div class="map__container">
+						<div class="map__info">
+							<div class="map__image">
+								<img src="img/map.jpg" alt="map">
+							</div>
+							<div class="map__content">
+								<div class="map__item">
+									<h2 class="map-item__title">
+										Бассейн WorkClass
+									</h2>
+									<div class="map__info-line">
+										<img src="img/location.png" alt="location logo">
+										<span>Невский 140</span>
+									</div>
+									<div class="map__info-line">
+										<img src="img/metro.png" alt="metro logo">
+										<span>м. Спасская</span>
+									</div>
+									<div class="map__info-line">
+										<img src="img/date.png" alt="date logo">
+										<span>Запись по договоренности</span>
+									</div>
+									<button class="button-invite">Записаться на сеанс</button>
+								</div>
+								<div class="map__item">
+									<h2 class="map-item__title">
+										Бассейн "На Гороховой"
+									</h2>
+									<div class="map__info-line">
+										<img src="img/location.png" alt="location logo">
+										<span>3-й проезд Иванова</span>
+									</div>
+									<div class="map__info-line">
+										<img src="img/metro.png" alt="metro logo">
+										<span>м. Крестовский остров</span>
+									</div>
+									<div class="map__info-line">
+										<img src="img/date.png" alt="date logo">
+										<span>Запись по договоренности</span>
+									</div>
+									<button class="button-invite">Записаться на сеанс</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
-			footer
+			<div class="footer__container">
+				<span class="footer__copy">
+					© 2018-2022 RitmStyle
+				</span>
+				<span class="footer__made">
+					Сделано d-e-n.info
+				</span>
+			</div>
 		</footer>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
