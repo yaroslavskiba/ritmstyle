@@ -36,6 +36,7 @@ if (iconMenu) {
 }
 
 var swiper = new Swiper(".swiper-container", {
+	loop: true,
 	effect: "coverflow",
 	initialSlide: 1,
 	spaceBetween: 50,
